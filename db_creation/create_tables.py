@@ -33,12 +33,12 @@ def main():
     database=r"../db/pythonsqlite.db"
 
     sql_depttable = """ CREATE TABLE IF NOT EXISTS Department(
-                                id integer PRIMARY KEY,
+                                id integer PRIMARY KEY ,
                                 name text
     ); """
 
     sql_employeetable = """ CREATE TABLE IF NOT EXISTS Employee(
-                                id integer PRIMARY KEY,
+                                id integer PRIMARY KEY ,
                                 name text,
                                 department_id integer,
                                 FOREIGN KEY (department_id) REFERENCES Department (id)
